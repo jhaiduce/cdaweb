@@ -1,4 +1,4 @@
-# swmf_validation
+# cdaweb
 
 cdaweb is a python module that provides functions to download data from CDAWeb (https://cdaweb.sci.gsfc.nasa.gov/index.html/) using their REST API (https://cdaweb.gsfc.nasa.gov/WebServices/REST/).
 
@@ -68,5 +68,8 @@ To fetch data, call the get_cdf function with the requested date range and the n
 ```python
 import cdaweb
 from datetime import datetime
-data=get_cdf('sp_phys','UY_M0_PFRA',start_date=datetime(1990,10,29),end_date=datetime(1990,11,29),variables=['Intensity'])
+data=get_cdf('sp_phys','UY_M0_PFRA',
+	start_date=datetime(1990,10,29),
+	end_date=datetime(1990,11,29),
+	variables=['Intensity'])
 ```
